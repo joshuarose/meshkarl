@@ -1,0 +1,24 @@
+{{outlet}}
+<div class="container">
+<h1>Create an account</h1>
+<form>
+  <div class="form-group">
+    <label for="name">Name</label>
+    {{input type="text" class="form-control" placeholder="name" value=name}}
+  </div>
+  <div class="form-group">
+    <label for="email">Email address</label>
+    {{input type="email" class="form-control" placeholder="email" value=email}}
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    {{input type="password" class="form-control" placeholder="password" value=password}}
+  </div>
+  <button {{action "createAccount"}} type="submit" class="btn btn-default">Submit</button>
+</form>
+
+{{#each model as |user|}}
+  {{user.name}}
+  {{/each}}
+
+</div>
