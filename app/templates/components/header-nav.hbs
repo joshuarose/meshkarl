@@ -1,16 +1,19 @@
-<nav class="navbar navbar-fixed-top accent">
-  <div class="container">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">
-        {{#link-to 'index'}}<img alt="Brand" src="logo.png">{{/link-to}}
-      </a>
-    </div>
-
-      <ul class="nav nav-pills navbar-right">
-        {{#link-to 'users' tagName="li"}}<a href="">Create an account</a>{{/link-to}}
-        {{#link-to 'how-it-works' tagName="li"}}<a href="#">How it works</a>{{/link-to}}
-        {{#link-to 'support' tagName="li"}}<a href="#">Support</a>{{/link-to}}
-        {{#link-to 'faq' tagName="li"}}<a href="#">FAQ</a>{{/link-to}}
-      </ul>
+{{#bs-navbar class="accent" as |navbar|}}
+  <div class="navbar-header accent">
+    {{#navbar.toggle}}
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    {{/navbar.toggle}}
+  {{#link-to "index" class="navbar-brand"}}<img alt="Brand" src="logo.png">{{/link-to}}
   </div>
-</nav>
+  {{#navbar.content class="navbar-right accent"}}
+    {{#navbar.nav as |nav|}}
+      {{#nav.item}}{{#nav.link-to 'users'}}Create an account{{/nav.link-to}}{{/nav.item}}
+      {{#nav.item}}{{#nav.link-to 'how-it-works'}}How it works{{/nav.link-to}}{{/nav.item}}
+      {{#nav.item}}{{#nav.link-to 'support'}}Support{{/nav.link-to}}{{/nav.item}}
+      {{#nav.item}}{{#nav.link-to 'faq'}}FAQ{{/nav.link-to}}{{/nav.item}}
+    {{/navbar.nav}}
+  {{/navbar.content}}
+{{/bs-navbar}}

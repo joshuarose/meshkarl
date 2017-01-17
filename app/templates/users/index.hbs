@@ -7,10 +7,12 @@
   </thead>
   <tbody>
     {{#each model as |user|}}
+      {{#if user.name}}
       <tr>
         <td>{{user.name}}</td>
         <td>{{user.email}}</td>
       </tr>
+      {{/if}}
       {{/each}}
   </tbody>
 </table>

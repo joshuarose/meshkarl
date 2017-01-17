@@ -24,7 +24,7 @@ ul.nav{
  justify-content: space-around;
 }
 .content{
-  margin-top: 50px;
+  /*margin-top: 50px;*/
   height: 100vh;
 
 }
@@ -34,4 +34,9 @@ ul.nav{
 .hero h1 {
   font-weight: lighter;
   font-size: 3em;
+}
+.navbar{
+  margin-bottom: 0;
+  border: none;
+  /*background-color: #fde366;*/
 }
