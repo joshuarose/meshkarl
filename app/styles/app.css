@@ -24,5 +24,14 @@ ul.nav{
  justify-content: space-around;
 }
 .content{
-  padding-top: 70px;
+  margin-top: 50px;
+  height: 100vh;
+
+}
+.hero{
+  background-color: #fde366;
+}
+.hero h1 {
+  font-weight: lighter;
+  font-size: 3em;
 }
