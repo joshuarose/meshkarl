@@ -2,15 +2,15 @@
   <div class="container">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">
-        <img alt="Brand" src="logo.png">
+        {{#link-to 'index'}}<img alt="Brand" src="logo.png">{{/link-to}}
       </a>
     </div>
 
       <ul class="nav nav-tabs navbar-right">
-        <li role="presentation">{{#link-to 'create-an-account'}}<a href="">Create an account</a>{{/link-to}}</li>
-        <li role="presentation">{{#link-to 'how-it-works'}}<a href="#">How it works</a>{{/link-to}}</li>
-        <li role="presentation">{{#link-to 'support'}}<a href="#">Support</a>{{/link-to}}</li>
-        <li role="presentation">{{#link-to 'faq'}}<a href="#">FAQ</a>{{/link-to}}</li>
+        {{#link-to 'users' tagName="li"}}<a href="">Create an account</a>{{/link-to}}
+        {{#link-to 'how-it-works' tagName="li"}}<a href="#">How it works</a>{{/link-to}}
+        {{#link-to 'support' tagName="li"}}<a href="#">Support</a>{{/link-to}}
+        {{#link-to 'faq' tagName="li"}}<a href="#">FAQ</a>{{/link-to}}
       </ul>
   </div>
 </nav>

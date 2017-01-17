@@ -1,1 +1,11 @@
-{{outlet}}
+<div class="container">
+  <h1>Users</h1>
+
+  <div class="well">
+    <ul class="nav nav-tabs">
+      {{#link-to 'users.new' tagName="li"}}<a href="">Add new</a>{{/link-to}}
+      {{#link-to 'users.index' tagName="li"}}<a href="">List all</a>{{/link-to}}
+    </ul>
+    {{outlet}}
+  </div>
+  </div>

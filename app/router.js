@@ -7,11 +7,12 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('create-an-account');
   this.route('faq');
   this.route('support');
   this.route('how-it-works');
-  this.route('users');
+  this.route('users', function() {
+    this.route('new');
+  });
 });
 
 export default Router;
