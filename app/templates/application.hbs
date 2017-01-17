@@ -1,43 +1,5 @@
-<nav class="navbar navbar-default navbar-fixed-top accent">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">
-        <img alt="Brand" src="logo.png">
-      </a>
-      <ul class="nav nav-tabs">
-        <li role="presentation">{{#link-to 'create-an-account'}}Create an account{{/link-to}}</li>
-        <li role="presentation">{{#link-to 'how-it-works'}}How it works{{/link-to}}</li>
-        <li role="presentation">{{#link-to 'support'}}Support{{/link-to}}</li>
-        <li role="presentation">{{#link-to 'faq'}}FAQ{{/link-to}}</li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
+{{header-nav}}
 <div class="content">
   {{outlet}}
 </div>
-
-<nav class="navbar navbar-default footer">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <img alt="Brand" src="logo_accent.png">
-      <!-- <ul class="nav">
-        <li role="presentation" class="active"><a href="#">Create an account</a></li>
-        <li role="presentation"><a href="#">How it works</a></li>
-        <li role="presentation"><a href="#">Support</a></li>
-        <li role="presentation"><a href="#">FAQ</a></li>
-      </ul> -->
-    <div class="row">
-      <a href="#">Create an account</a>
-      <a href="#">How it works</a>
-      <a href="#">Support</a>
-      <a href="#">FAQ</a>
-    </div>
-    <div class="row">
-      <small class="text-muted">Copyright 2016 MeshApp. All Rights Reserved.</small>
-    </div>
-
-    </div>
-  </div>
-</nav>
+{{footer-nav}}

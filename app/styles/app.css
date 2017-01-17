@@ -1,11 +1,28 @@
 .accent {
   background-color: #fde366;
 }
-.footer{
-  text-align: center;
-  background: #000;
+nav.accent{
+  height: 30px;
 }
-
+ul.nav{
+  display: flex;
+  align-items: center;
+}
+.navbar-brand{
+  /*padding: 0;
+  margin: 0;*/
+}
+.footer{
+  padding: 1rem;
+  margin-bottom: 0;
+}
+.footer-nav{
+  width: 60%;
+  margin: 0 auto;
+  padding-top: .5rem;
+  display: flex;
+ justify-content: space-around;
+}
 .content{
-  margin-top:150px;
+  padding-top: 70px;
 }
